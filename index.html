@@ -31,6 +31,73 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <!-- Algo más de CSS para personalizar-->
         <link href="style.css" rel="stylesheet" />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&display=swap");
+
+            @media (min-width: 800px) {
+                .container {
+                    max-width: 800px;
+                }
+            }
+
+            body {
+                font-family: "Barlow Semi Condensed", sans-serif;
+                font-weight: 400;
+                background: rgba(235, 233, 226, 1);
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-family: "DM Serif Display", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            h1 {
+                font-size: calc(2rem + 1.5vw);
+                color: #8c4250;
+            }
+
+            h2 {
+                font-size: calc(1rem + 0.9vw);
+            }
+
+            h3 {
+                font-size: calc(1rem + 0.6vw);
+            }
+
+            h4 {
+                font-size: calc(1rem + 0.3vw);
+            }
+
+            h5,
+            h6 {
+                font-weight: 300;
+            }
+
+            h5 {
+                font-size: 1.1rem;
+            }
+
+            h6 {
+                font-size: 0.9rem;
+            }
+
+            div.cierre {
+                content: "";
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100vw;
+                height: 35vw;
+                background: linear-gradient(rgba(235, 233, 226, 1), rgba(235, 233, 226, 0.75)), url("img/fondo.png");
+                background-size: cover;
+                background-position: center middle;
+                background-repeat: no-repeat;
+            }
+        </style>
     </head>
     <body>
         <!--el encabezado-->
@@ -48,68 +115,97 @@
             </div>
         </header>
         <!--la parte principal-->
-        <main>
-            <article> 
-1.1 Origen (necesidad) 
-*(Sólo texto)* 
+        
+        <main class="row">
+        <article class="col-11 col-md-10 mx-auto my-5">
 
-La Biblioteca Nacional nace debido a la necesidad de tener un espacio físico en donde resguardar y difundir el patrimonio intelectual, y desde su fundación comenzó a recibir donaciones de libros por parte de los vecinos de Santiago y otras ciudades, para poder recogerlos y catalogarlos, y así dejarlos disponibles a la consulta pública. 
+        <h2 class="text-center">1.1 Origen</h2>
 
-Hoy, su misión es un poco más amplia, ya que se concentra en rescatar, preservar y difundir nuestro patrimonio bibliográfico, y además ha dado un nuevo paso incorporando una biblioteca digital para aumentar la accesibilidad. Así, en el 2003 se inauguró el portal de contenidos culturales y biblioteca virtual Memoria Chilena, que permite dar acceso a los diversos materiales que preserva Biblioteca Nacional de Chile.  
+        <p>La Biblioteca Nacional nace debido a la necesidad de tener un espacio físico en donde resguardar y difundir el patrimonio intelectual, y desde su fundación comenzó a recibir donaciones de libros por parte de los vecinos de Santiago y otras ciudades, para poder recogerlos y catalogarlos, y así dejarlos disponibles a la consulta pública.</p>
+
+        <p>Hoy, su misión es un poco más amplia, ya que se concentra en rescatar, preservar y difundir nuestro patrimonio bibliográfico, y además ha dado un nuevo paso incorporando una biblioteca digital para aumentar la accesibilidad. Así, en el 2003 se inauguró el portal de contenidos culturales y biblioteca virtual Memoria Chilena, que permite dar acceso a los diversos materiales que preserva Biblioteca Nacional de Chile.</p>
+
+        <img src="" class="mt-1 mb-3 shadow-sm" />
+            
             </article>
-            <article>
-            1.2 Fundadores 
-*(Ilustraciones personajes, nombres y ocupaciones)* 
 
-Ya que en la época en que se fundó, todo se regía por la Junta de Gobierno, se podría decir que sus fundadores son: Francisco Antonio Pérez, Agustín Manuel Eyzaguirre y Juan Egaña. 
+            <article class="col-11 col-md-10 mx-auto my-5">
 
-Quienes firmaron la Proclamación de la Fundación de la Biblioteca Nacional, la que fue publicada en el diario el Monitor Araucano.
+        <h2 class="text-center">1.2 Fundadores</h2>
+
+        <p>Ya que en la época en que se fundó, todo se regía por la Junta de Gobierno, se podría decir que sus fundadores son: Francisco Antonio Pérez, Agustín Manuel Eyzaguirre y Juan Egaña. </p>
+
+        <p>Quienes firmaron la Proclamación de la Fundación de la Biblioteca Nacional, la que fue publicada en el diario el Monitor Araucano.</p>
+
+        <img src="" class="mt-1 mb-3 shadow-sm" />
+          
             </article>
-            <article>
-                1.3 Locaciones 
-*(Carrusel/GIF: gráficas Animación IG)* 
+            
+           <article class="col-11 col-md-10 mx-auto my-5">
 
-Desde su creación hasta hoy ha transitado por diferentes lugares, todos dentro del mismo sector, y que hoy son ocupados por otros edificios importantes para la ciudad, los que se ilustran a continuación: 
+        <h2 class="text-center">1.3 Locaciones</h2>
 
-1813 y 1818 – 1823 
-Ex Universidad de San Felipe 
-Hoy Teatro Municipal 
+        <p>Desde su creación hasta hoy ha transitado por diferentes lugares, todos dentro del mismo sector, y que hoy son ocupados por otros edificios importantes para la ciudad, los que se ilustran a continuación:</p>
 
-1823 – 1834 
-Ex edificio de la Real Aduana 
-Hoy Museo Chileno de Arte Precolombino 
+ <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/carrusel-1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel-2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel-3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel-4.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel-5.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel-6.png" class="d-block w-100" alt="...">
+    </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
 
-1824-1886 
-Ex Edificio de adobe para la Biblioteca 
-Hoy Jardines Sede de Santiago del Congreso Nacional 
+<p>Para su construcción fue necesario demoler el antiguo Convento de las Monjas Clarisas, el que fue donado y demolido en 1913, y en 1914 se puso la primera piedra para la construcción de la biblioteca.</p>
 
-1886-1925 
-Ex edificio del Palacio Real Tribunal del Consulado 
-Hoy Tribunales de Justicia 
-
-1925 – HOY 
-Ex Convento de las Monjas Clarisas 
-Hoy Biblioteca Nacional 
-
-Para su construcción fue necesario demoler el antiguo Convento de las Monjas Clarisas, el que fue donado y demolido en 1913, y en 1914 se puso la primera piedra para la construcción de la biblioteca 
+     <img src="" class="mt-1 mb-3 shadow-sm" />     
+     
             </article>
-            <article>
-                1.4 Arquitecto, diseño y construcción 
-*(GIF/Carrusel Crossfade: Planta Original y Planta Actual)* 
 
-Su arquitecto fue Gustavo García del Postigo, quien diseñó la construcción en forma de cruz de Malta con la intención de que fuera un espacio que albergaría el Archivo Nacional, el Museo Histórico y la Biblioteca en un mismo lugar. Sin embargo, finalmente se omitió una de las alas y en su lugar se dejaron los actuales jardines.  
+        <article class="col-11 col-md-10 mx-auto my-5">
 
-Gracias a él, la Biblioteca se convirtió en el primer edificio público construido en Hormigón Armado en el país, y consideró una ornamentación exterior e interior que pusiera en valor el trabajo artesanal y nacional, además del uso de materias nobles, dándole al edificio un carácter neoclásico, monumental y académico. 
+        <h2 class="text-center">1.4 Arquitecto, diseño y construcción</h2>
 
-*(Línea de tiempo: Evolución construcción panorámica)* 
- 
+        <p>Su arquitecto fue Gustavo García del Postigo, quien diseñó la construcción en forma de cruz de Malta con la intención de que fuera un espacio que albergaría el Archivo Nacional, el Museo Histórico y la Biblioteca en un mismo lugar. Sin embargo, finalmente se omitió una de las alas y en su lugar se dejaron los actuales jardines.</p>            
+
+<p>Gracias a él, la Biblioteca se convirtió en el primer edificio público construido en Hormigón Armado en el país, y consideró una ornamentación exterior e interior que pusiera en valor el trabajo artesanal y nacional, además del uso de materias nobles, dándole al edificio un carácter neoclásico, monumental y académico.</p>
+
+ <img src="" class="mt-1 mb-3 shadow-sm" />
+
             </article>
-            <article>
-                2.1 Locación Actual 
-*(Entorno y accesibilidad: Panorámica Alameda)* 
 
-Actualmente está ubicada en medio del Barrio Histórico de Santiago en plena Avenida Libertador Bernardo O´Higgins, permitiéndole una gran conectividad con la ciudad. Su cuadrante comprende las calles Mac Iver, Moneda, Miraflores y la Alameda. A su costado se encuentra el Cerro Santa Lucía, el que casi triplica su tamaño y la hace ver muy pequeña a pesar de sus imponentes 25 m de altura. 
+  <article class="col-11 col-md-10 mx-auto my-5">
+
+        <h2 class="text-center">2.1 Locación actual</h2>
+
+        <p>Actualmente está ubicada en medio del Barrio Histórico de Santiago en plena Avenida Libertador Bernardo O´Higgins, permitiéndole una gran conectividad con la ciudad. Su cuadrante comprende las calles Mac Iver, Moneda, Miraflores y la Alameda. A su costado se encuentra el Cerro Santa Lucía, el que casi triplica su tamaño y la hace ver muy pequeña a pesar de sus imponentes 25 m de altura. </p>            
+
+ <img src="" class="mt-1 mb-3 shadow-sm" />
+
             </article>
+            
+            <article></article>
         </main>
         <aside>
             <div class="container">
